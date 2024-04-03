@@ -1,7 +1,7 @@
 export default function DonationForm() {
   return (
     <section className="donation">
-      <h3>You could be donation <span class="secondary">#1!</span></h3>
+      <h3>You could be donation <span class="secondary">#{ }!</span></h3>
       <form>
         <label htmlFor="name"
           >Name<input
