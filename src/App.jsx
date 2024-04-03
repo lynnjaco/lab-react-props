@@ -47,6 +47,7 @@ function App() {
         <section className="sidebar"><RecentDonations /></section>
         <section className="">
           <Progress/>
+          <DonationForm count={ donations.length + 1 }/>
         </section>
       </main>
     </>
