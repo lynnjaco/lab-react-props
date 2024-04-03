@@ -1,9 +1,10 @@
-export default function RecentDonations(props) {
+export default function RecentDonations( { donations } ) {
   return(
     <section>
       <h2>Recent Donations</h2>
       <ul>
-        <li><span>{ props.name } donated ${ props.amount }</span>{ props.caption }</li>
+        { donations.map((donation) => 
+        <li><span>{ donation.name } donated ${ donation.amount }</span>{ donation.caption}</li>)}   
       </ul>
     </section>
   )
